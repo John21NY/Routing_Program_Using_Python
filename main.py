@@ -2,12 +2,7 @@ import csv
 import datetime
 
 
-'''Name: Ioannis Ntoulis
-   Student ID: 004124437 '''
-
-
 # HashTable class using chaining
-# Citation: (Dr. Tepe, C950 - Webinar-1 - Let’s Go Hashing - Complete Python Code 2020)
 class ChainingHashTable:
     # Constructor with optional initial capacity parameter.
     # Assigns all buckets with an empty list.
@@ -133,7 +128,7 @@ def loadPackageData(fileName, myHash):
 myHash = ChainingHashTable()
 
 # Load packages to Hash Table
-loadPackageData('/Users/admin/Desktop/Package_File.csv', myHash)
+loadPackageData('Packages.csv', myHash)
 
 
 '''Class Truck to initialize the class properties
@@ -202,9 +197,9 @@ def load_address_data(filename):
 
 
 # Call the function and pass the path for the distance csv file as an argument
-load_distance_data('/Users/admin/Desktop/Distance_InNumbers.csv')
+load_distance_data('Distances.csv')
 # Call the function and pass the path for the address csv file as an argument
-load_address_data('/Users/admin/Desktop/Distance_Address.csv')
+load_address_data('Addresses.csv')
 
 '''
 Using this function to calculate the distance between two specific addresses.
@@ -336,9 +331,3 @@ if __name__ == '__main__':
             print("Program End")
             quit()
 
-'''Resources
-
-Tepe, C. (2020, November 17). C950 - Webinar-1 - Let’s Go Hashing - Complete Python Code. 
- https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f08d7871-d57a-496e-a6a1-ac7601308c71. 
- Retrieved July 12, 2022, from https://my.wgu.edu/
-'''
